@@ -1,26 +1,21 @@
 <?php
     require_once('templates/header.php');
+    require_once('lib/config.php');
+
+#----------------récuperation recette-----------------
+$requete = $bdd->prepare("SELECT * FROM recipes");
+$requete->execute();
+$recipes =$requete->fetchAll();
 ?>
-<?php
-$recipes = [
-    ["titre"=>"Quiche","description"=>"Tarte aux lardons","preparation"=>"20 min","repos"=>"aucun","cuisson"=>"35 min","ingrédients"=>""],
-    ["titre"=>"Quiche","description"=>"Tarte aux poireaux","preparation"=>"25 min","repos"=>"aucun","cuisson"=>"35 min","ingrédients"=>""],
-    ["titre"=>"Quiche","description"=>"Tarte aux courgettes","preparation"=>"25 min","repos"=>"aucun","cuisson"=>"40 min","ingrédients"=>""]
-]
-?>
-<?php foreach ($recipes as $key => $recipe){?>
-    <div class="col">
-        <div class="card h-100">
-            <img src="./assets/images/" class="card-img-top" alt="alimentation">
-            <div class="card-body">
-                <h5 class="card-title"><?=$recipe['titre'];?></h5>
-                <p class="card-text"><?=$recipe['description'];?></p>
-            </div>
+
+<div class="m-5">
+    <h1>Les recettes</h1>
+        <div class="row">
+            <?php foreach ($recipes as $key => $recipe){
+            include('templates/recipe_partial.php');
+            } ?>
         </div>
-    </div>
-<?php } ?>
-
-
+</div>
 
 <?php
     require_once('templates/footer.php');
