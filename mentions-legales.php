@@ -2,7 +2,7 @@
     require_once('templates/header.php');
 ?>
 <main>
-    <div class="p-5 mx-5">
+    <div class="p-3 mx-3">
         <div class="p-2">
             <h1>Mentions Légales</h1>
             <p>
@@ -19,16 +19,16 @@
                         <li class="p-2"style="list-style-image:url(./assets/images/icone-telephone.png)">04 22 33 44 01</li>
                         <li class="p-2"style="list-style-image:url(./assets/images/icone-maison.png)">32 rue la Taille de guêpes<br> 14118 Caen</li>
                         <li class="p-2"style="list-style-image:url(./assets/images/icone-mail.png)">sandrine.coupart@nutritionniste-dieteticienne.fr</li>
-                        <li class="p-2"style="list-style-image:url(./assets/images/icone-identification.png)">Numéro d'Ordre Professionnel :</li>
+                        <li class="p-2"style="list-style-image:url(./assets/images/icone-identification.png)">Numéro d'Ordre Professionnel : 000000</li>
                     </ul>
                 </div>
                 <div class="p-4 col-md-4 ">
                     <div>
                         <ul>Hébergeur du Site :
-                            <li class="p-2"style="list-style-image:url(./assets/images/icone-nom.png)">[Nom de l'Hébergeur]</li>
-                            <li class="p-2"style="list-style-image:url(./assets/images/icone-maison.png)">[Adresse de l'Hébergeur]</li>
-                            <li class="p-2"style="list-style-image:url(./assets/images/icone-telephone.png)">[Téléphone de l'Hébergeur]</li>
-                            <li class="p-2"style="list-style-image:url(./assets/images/icone-mail.png)">[E-mail de l'Hébergeur]</li>
+                            <li class="p-2"style="list-style-image:url(./assets/images/icone-nom.png)">BS-IT</li>
+                            <li class="p-2"style="list-style-image:url(./assets/images/icone-maison.png)">27 Rue du Pavillon<br>91360 Epinay-Sur-Orge</li>
+                            <li class="p-2"style="list-style-image:url(./assets/images/icone-telephone.png)">+33638557579</li>
+                            <li class="p-2"style="list-style-image:url(./assets/images/icone-mail.png)">benjamin.simon@bs-it.fr</li>
                         </ul>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ $requete = $bdd->prepare("SELECT * FROM ateliers");
 $requete->execute();
 $ateliers =$requete->fetchAll();
 ?>
-<div class="container m-5">
+<div class="container m-3">
     <div class="row d-flex justify-content-center">
         <?php foreach ($ateliers as $atelier) {
                 if($atelier['image']===null){

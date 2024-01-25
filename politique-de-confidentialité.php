@@ -1,7 +1,7 @@
 <?php
     require_once('templates/header.php');
 ?>
-<div class="p-5 mx-5">
+<div class="p-3 mx-3">
     <h1>Politique de Confidentialité</h1>
         <p>
             Dernière mise à jour : 05/01/2024

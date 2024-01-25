@@ -22,7 +22,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST" AND isset($_POST['valid_login'])){
     if($user != ""){
         // connexion à la bdd en tant qu'admin---------
         $requete_adm = $bdd->prepare("SELECT*FROM users WHERE user = '$user' AND mdp = '$mdp'");
-        $requete_pat = $bdd->prepare("SELECT id_patient, SUBSTR(nom, 1,1) as init_N, SUBSTR(prenom,1,1) as init_P FROM patient WHERE user = '$user' AND mdp = '$mdp'");
+        $requete_pat = $bdd->prepare("SELECT id_patient, SUBSTR(nom, 1,1) as init_N, SUBSTR(prenom,1,1) 
+        as init_P FROM patient WHERE user = '$user' AND mdp = '$mdp'");
         $requete_adm->execute();
         $requete_pat->execute();
         if ($requete_adm->rowCount()==1){

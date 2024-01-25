@@ -2,7 +2,7 @@
     require_once('templates/header.php');
 ?>
     <main>
-        <div class="p-5">
+        <div class="p-2">
             <div class="d-flex flex-wrap justify-content-center ">
                 <div class="col-md-8 px-5 align-self-center">
                     <h1>Bonjour,</h1>

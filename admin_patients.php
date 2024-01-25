@@ -8,7 +8,7 @@ $requete->execute();
 $patients =$requete->fetchAll();
 ?>
 
-<div class="p-5 d-flex justify-content-start">
+<div class="p-3 d-flex justify-content-start">
     <a href="admin_patient.php" class="btn btn-outline-success bouton" type="submit">Nouveau patient</a>
 </div>
 <div class="px-5">
