@@ -3,8 +3,6 @@ ECF Sandrine Coupart
 
 ![screenshot_readme.md.png](readme.md.png)
 
-
-
 Ce dépôt comprend :
 * le code en PHP 8
 * une base de données mariaDB 
@@ -24,18 +22,15 @@ Installation
 ------------
 
 synchroniser le code php dans le repertoire root de apache
- $ git clone git@github.com:Estelle-Berger/Sandrine_Coupart.git
+   $ git clone git@github.com:Estelle-Berger/Sandrine_Coupart.git
+   
 importer la bdd 
- $ mysql -u $user -p $database_name < import.sql
-
-
-
-
+   $ mysql -u $user -p $database_name < import.sql
 
 Changelog
 =========
 
-## [1.0.0] - 2023-02-28
+## [1.0.0] - 2024-01-25
 
 - Version initiale
                      
