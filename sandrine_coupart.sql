@@ -1,6 +1,3 @@
-CREATE DATABASE Sandrine_coupart;
-USE SandrineCoupart;
-
 CREATE TABLE users(
     id_user int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
     user VARCHAR(255) NOT NULL,
