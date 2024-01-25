@@ -21,12 +21,14 @@ Pré-requis
 Installation
 ------------
 
-synchroniser le code php dans le repertoire root de apache
+Synchroniser le code PHP dans le repertoire root de apache
+   ```
    $ git clone git@github.com:Estelle-Berger/Sandrine_Coupart.git
-   
-importer la bdd 
+   ```
+Importer la base de données 
+```
    $ mysql -u $user -p $database_name < import.sql
-
+```
 Changelog
 =========
 
