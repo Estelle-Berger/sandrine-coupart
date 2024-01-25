@@ -1,7 +1,7 @@
 ECF Sandrine Coupart
 ==============
 
-![screenshot_grafana.png](screenshot_grafana.png)
+![screenshot_grafana.png](readme.md.png)
 
 
 
