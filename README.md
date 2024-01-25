@@ -1,7 +1,7 @@
 ECF Sandrine Coupart
 ==============
 
-![screenshot_readme.md.png](D:\Sandrine Coupart\image ecf\readme.md.png)
+![screenshot_readme.md.png](../images/readme.md.png)
 
 Ce dépôt comprend :
 * le code en PHP 8
