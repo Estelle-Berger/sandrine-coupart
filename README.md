@@ -3,6 +3,8 @@ ECF Sandrine Coupart
 
 ![readme.md.png](./assets/images/readme.md.png)
 
+Ce site web mobile de Sandrine Coupart est fait pour lui permet de créer ses fichiers patients avec leurs recettes associées, ses recettes, ses ateliers et d'être visible pour de futurs patients. 
+
 Ce dépôt comprend :
 * le code en PHP 8
 * une base de données mariaDB 
