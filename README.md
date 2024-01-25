@@ -3,10 +3,12 @@ ECF Sandrine Coupart
 
 ![readme.md.png](./assets/images/readme.md.png)
 
+Ce site web mobile de Sandrine Coupart est fait pour lui permet de créer ses fichiers patients avec leurs recettes associées, ses recettes, ses ateliers et d'être visible pour de futurs patients. 
+
 Ce dépôt comprend :
 * Le code en PHP 8
 * Une base de données mariaDB 
-* Du html5 et css3
+* Du HTML5 et CSS3
 
 
 Pré-requis
@@ -21,10 +23,13 @@ Pré-requis
 Installation
 ------------
 
-synchroniser le code php dans le repertoire root de apache
-   $ git clone git@github.com:Estelle-Berger/Sandrine_Coupart.git
+Synchroniser le code php dans le répertoire root de apache
+   ```
+   $ https://github.com/Estelle-Berger/sandrine-coupart.git
+   ```
    
-importer la bdd 
+Importer la base de données
+  ```
    $ mysql -u $user -p $database_name < import.sql
 ```
 Changelog
