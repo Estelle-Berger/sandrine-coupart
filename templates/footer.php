@@ -8,13 +8,14 @@
         </div>
         <div>
             <a href="./mentions-legales.php" class="link-dark" role="button" style="text-decoration: none;">Mention légale</a><br> 
-            <a href="./politique-de-confidentialité.php"class="link-dark" role="button"style="text-decoration: none;">Politique de confidentialité</a> 
+            <a href="./politique-de-confidentialité.php"class="link-dark" role="button"style="text-decoration: none;">
+            Politique de confidentialité</a> 
         </div>
     </footer>
     </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="stars.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

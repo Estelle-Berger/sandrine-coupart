@@ -7,7 +7,7 @@
 <?php
 #----------------récuperation recette-----------------
 $id_patient = $_SESSION['id_patient'];
-$requete = $bdd->prepare("SELECT * FROM `recipes` as R, `patient` as P
+$requete = $bdd->prepare("SELECT R.* FROM `recipes` as R, `patient` as P
 WHERE 
 (P.allergene_1 = 0 OR (P.allergene_1 = 1 and R.allergene_1 = 0)) AND
 (P.allergene_2 = 0 OR (P.allergene_2 = 1 and R.allergene_2 = 0)) AND
@@ -35,7 +35,6 @@ $recipes =$requete->fetchAll();
             } ?>
         </div>
 </div>
-
 
 <?php
     require_once('templates/footer.php');

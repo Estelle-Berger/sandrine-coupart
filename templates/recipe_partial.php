@@ -22,7 +22,8 @@ if($recipe['image']===NULL){
                                     $concat_allergene = $concat_allergene.', '.$allergene[$i-1];?>
                             <?php }
                         }?>
-                        <img class="px-2" src="assets/images/1546052.png" alt="icone-allergene"title="<?=substr($concat_allergene,2,strlen($concat_allergene));?>"><?=$count_allergene;?>Allergène<?php if($count_allergene>1) echo "s";?>
+                        <img class="px-2" src="assets/images/icone-allergene.png" alt="icone-allergene"title="
+                        <?=substr($concat_allergene,2,strlen($concat_allergene));?>"><?=$count_allergene;?>&nbsp;Allergène<?php if($count_allergene>1) echo "s";?>
                     <?php $count_regime = 0 ;$concat_regime = "";
                         for($i=1; $i< 9; $i++){
                             if ($recipe['regime_'.$i] == "1"){
@@ -30,7 +31,8 @@ if($recipe['image']===NULL){
                                     $concat_regime = $concat_regime.', '.$regime[$i-1];?>
                             <?php }
                         }?>
-                        <img class="px-2" src="assets/images/icone-regime.png" alt="icone-regime" title="<?= substr($concat_regime,2,strlen($concat_regime));?>"><?=$count_regime;?>Régime<?php if($count_regime>1) echo "s";?>
+                        <img class="px-2" src="assets/images/icone-regime2.png" alt="icone-regime" title="
+                        <?= substr($concat_regime,2,strlen($concat_regime));?>"><?=$count_regime;?>&nbsp;Régime<?php if($count_regime>1) echo "s";?>
                 </li>
             </ul>
         <div class="card-body">

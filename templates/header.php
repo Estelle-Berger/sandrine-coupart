@@ -37,7 +37,8 @@
                 <a href="./index.php">
                     <img src="assets/images/logo.png" alt="logo Sandrine-Coupart"width="70">
                 </a>
-                    <button class="navbar-toggler burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="top: 35px;">
+                    <button class="navbar-toggler burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation" style="top: 35px;">
                         <span class="navbar-toggler-icon"></span>
                     </button>
             </div>
@@ -68,8 +69,8 @@
                 <a href="login.php" class="d-block link-body-emphasis text-decoration-none dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="false">
                         <?php if(isset($_SESSION['User_Profile']) AND $_SESSION['User_Profile'] == "admin"){?>
                                 <p class="cercle_admin">SC</p>
-                                <?php } elseif(isset($_SESSION['User_Profile']) AND $_SESSION['User_Profile'] == "patient"){?>
-                                <span class="cercle_patient"><?=$_SESSION["User_Initials"];?></span>
+                                <?php } else if(isset($_SESSION['User_Profile']) AND $_SESSION['User_Profile'] == "patient"){?>
+                                <p class="cercle_patient"><?=$_SESSION["User_Initials"];?></p>
                             <?php }
                                 else{?>
                                 <img src="assets/images/login.png" alt="login" width="50" height="50" class="rounded-circle">

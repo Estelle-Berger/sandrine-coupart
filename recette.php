@@ -1,13 +1,10 @@
 <?php
     require_once('templates/header.php');
     require_once('lib/config.php');
-    
-?>
-<?php
+
 function linesToArray($string){
     return explode(PHP_EOL, $string);
 }
-
 #----------------récuperation recette-----------------
 $id = $_GET['id_recette'];
 $requete = $bdd->prepare("SELECT * FROM recipes WHERE id_recette = :id");
@@ -30,7 +27,6 @@ if($recipes['image']==null){
             <div class="col-10 col-sm-8 col-lg-6">
                 <img src="<?=$imagePath;?>" class="d-block mx-lg-auto img-fluid" alt="<?=$recipes['titre'];?>" width="200" height="200" loading="lazy">
             </div>
-            
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"><?=$recipes['titre'];?></h1>
                 <p class="lead"><?=$recipes['description'];?></p>
@@ -58,7 +54,12 @@ if($recipes['image']==null){
                         $count_allergene++;
                         $concat_allergene = $concat_allergene.', '.$allergene[$i-1];?>
             <?php }}?>
-            <li><?=substr($concat_allergene,2,strlen($concat_allergene));?></li>
+            <li><?php if($count_allergene > 0){
+                echo substr($concat_allergene,2,strlen($concat_allergene));
+            } else{
+                echo "Aucun allergène";
+            }?></li>
+            
             </ul>
         </div>
         <div class="col-10 col-sm-8 col-lg-6">
@@ -70,11 +71,14 @@ if($recipes['image']==null){
                         $count_regime++;
                         $concat_regime = $concat_regime.', '.$regime[$i-1];?>
             <?php }}?>
-            <li><?= substr($concat_regime,2,strlen($concat_regime));?></li>
+            <li><?php if($count_regime > 0){
+                echo substr($concat_regime,2,strlen($concat_regime));
+                }else{
+                    echo"Aucun régime";
+                }?></li>
             </ul>
         </div>
     </div>
-    <?php ?>
     <div class=" p-3 row flex-lg-row-reverse align-items-center">
         <h2>Ingrédients</h2>
         <?php foreach ($ingredients as $ingredient) {?>
@@ -109,11 +113,26 @@ if($recipes['image']==null){
             rounded-2" name="avis" id="avis" cols="20" rows="5"required></textarea>
         </div>
         <div class="d-flex justify-content-center">
-            <input class="btn btn-outline-success" type="submit" name="valide_avis" value="Enregistrer" >
+            <input class="btn btn-outline-success" type="submit" id="mybutton" name="valide_avis" value="Enregistrer" >
         </div>
     </form>
     <?php } ?>
-
+<?php 
+#----------------récuperation avis-----------------
+$requete = $bdd->prepare("SELECT avis, note FROM avis WHERE id_recette = '$id'");
+$requete->execute();
+$all_avis = $requete->fetchAll();
+if($all_avis!=null){
+    foreach($all_avis as $avis) ?>
+<div class="mx-5 my-2 border-top d-flex justify-content-around row">
+    <div class="col-12 fw-bold">
+        <p><strong class="text-decoration-underline">Note :</strong>&nbsp;<?=$avis['note']?>/5</p>
+    </div>
+    <div class="col-12">
+        <p ><strong class="text-decoration-underline">Commentaire :</strong><span class="avis">&nbsp;<?=$avis['avis']?></span></p>
+    </div>
+</div>
+<?php } ?>
 <?php
     require_once('templates/footer.php');
 ?>

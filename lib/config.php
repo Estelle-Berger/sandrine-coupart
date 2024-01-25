@@ -147,7 +147,7 @@ if(isset($_POST['valide_Recette'])){
     $cuisson = $_POST['cuisson'];
     $ingredient = $_POST['ingredient'];
     $etape = $_POST['etape'];
-    $for_patient = $_POST['for_patient'];
+    $for_patient = (isset($_POST['for_patient']))?"1":"0";
     $allergene_1 =(isset($_POST['allergene_1']))?"1":"0";
     $allergene_2 =(isset($_POST['allergene_2']))?"1":"0";
     $allergene_3 =(isset($_POST['allergene_3']))?"1":"0";
@@ -178,7 +178,7 @@ if(isset($_POST['valide_Recette'])){
         move_uploaded_file($tmpName, $image);
     }
 
-    $requete = $bdd->prepare("INSERT INTO recipes VALUES(0, :titre, :description, :preparation, :repos, :cuisson, :ingredient, :etape, :image, :for_patient, :allergene_1,
+    $requete = $bdd->prepare("INSERT INTO recipes VALUES(0, :titre, :preparation, :repos, :cuisson, :description, :ingredient, :etape, :image, :for_patient, :allergene_1,
     :allergene_2, :allergene_3, :allergene_4, :allergene_5, :allergene_6, :allergene_7, :allergene_8, :allergene_9, :allergene_10,
     :allergene_11, :allergene_12, :allergene_13, :allergene_14, :regime_1, :regime_2, :regime_3, :regime_4, :regime_5, :regime_6, :regime_7, :regime_8, :regime_9)");
     $requete->execute(

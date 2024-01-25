@@ -15,7 +15,7 @@
                 Si vous le souhaitez <strong>je vous propose lors de cette séance les mesures de la balance à impédancemétrie</strong> qui vont permettre de faire 
                 <strong> bilan précis concernant votre poids, vos pourcentages de muscles, de graisse, d’os, d’eau, votre métabolisme basal et votre âge métabolique.</strong>
                 </p>
-                <div class="card text-center">
+            <div class="card text-center">
                 <div class="card-header">
                     Première consultation
                 </div>
@@ -28,7 +28,6 @@
                 </div>
             </div>
         </div>
-            
     </div>    
     <div class="p-5 d-flex flex-wrap justify-content-center ">
         <div class="col-md-8 px-5 align-self-center">
@@ -39,7 +38,7 @@
                     d'améliorer constamment vos habitudes alimentaires pour vous guider vers une totale autonomie nutritionnelle dans 
                     le respect d’une alimentation équilibrée et à l’écoute de vos sensations alimentaires.
                     Elles permettront également de discuter de vos ressentis et de vos difficultés et de fixer des objectifs adaptés à votre situation.
-                    </p>
+                </p>
         </div>
         <div class="card text-center">
             <div class="card-header">

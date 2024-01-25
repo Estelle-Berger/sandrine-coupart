@@ -1,15 +1,17 @@
 <?php 
     require_once('templates/header.php');
     require_once('lib/config.php');
-?>
-<h1>Mot de passe oubliée</h1>
-<form method="post">
-    <div class="container">
-        <label for="email">Email</label>
-        <input type="email" placeholder="Entrez votre mail..."name="email"required>
-        <button type="submit">Envoyer nouveau mot de passe</button>
-    </div>
-</form>
+?><div class="m-3">
+    <h1>Mot de passe oubliée</h1>
+    <form method="post">
+        <div class="container">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Entrez votre mail..."name="email"required>
+            <button type="submit">Envoyer nouveau mot de passe</button>
+        </div>
+    </form>
+</div>
+
 <?php 
     if(isset($_POST['email'])){
         $mdp = uniqid();
