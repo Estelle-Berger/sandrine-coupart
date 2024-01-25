@@ -23,7 +23,7 @@ Installation
 
 Synchroniser le code PHP dans le repertoire root de apache
    ```
-   $ git clone git@github.com:Estelle-Berger/Sandrine_Coupart.git
+   $ https://github.com/Estelle-Berger/sandrine-coupart.git
    ```
 Importer la base de données 
 ```
